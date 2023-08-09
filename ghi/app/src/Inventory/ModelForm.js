@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import './Inventory.css';
 
 
 function ModelForm() {
@@ -67,7 +68,7 @@ function ModelForm() {
     return(
         <div className="row">
             <div className="offset-3 col-6">
-            <div className="shadow p-4 mt-4">
+            <div className="shadow p-4 mt-4 form-1">
                 <h1>Create a Vehicle Model</h1>
                 <form onSubmit={handleSubmit} id="create-vehicle-form">
                 <div className="form-floating mb-3">
@@ -94,7 +95,7 @@ function ModelForm() {
                         })}
                     </select>
                 </div>
-                <button className="btn btn-primary">Create</button>
+                <button className="btn btn-success">Create</button>
                 </form>
             </div>
             </div>

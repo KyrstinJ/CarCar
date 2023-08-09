@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Sale.css';
 
 function SaleForm(){
     const [vins, setVins] = useState([]);
@@ -106,8 +107,8 @@ function SaleForm(){
     return(
         <div className="row">
             <div className="offset-3 col-6">
-                <div className="shadow p-4 mt-4">
-                    <h1>Record a sale</h1>
+            <div className="shadow p-4 mt-4 form-1">
+                    <h1>Record a Sale</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <select onChange={handleVinChange} value={automobile} required name="automobile" id="automobile" className="form-select">

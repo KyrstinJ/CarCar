@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import './Inventory.css';
 
 function AutomobileList() {
 
@@ -22,9 +22,9 @@ function AutomobileList() {
     return (
         <div>
             <h1>Automobiles</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
-                <tr>
+                <tr className='table-selector'>
                     <th>VIN</th>
                     <th>Color</th>
                     <th>Year</th>
@@ -49,7 +49,7 @@ function AutomobileList() {
                 </tbody>
             </table>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a className="btn btn-secondary btn-lg px-4 gap-3" href='http://localhost:3000/automobiles/new'>Create a New Automobile</a>
+                <a className="btn btn-success btn-lg px-4 gap-3" href='http://localhost:3000/automobiles/new'>Create a New Automobile</a>
             </div>
         </div>
     );

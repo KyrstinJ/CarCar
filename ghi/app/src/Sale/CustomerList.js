@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
+import './Sale.css';
 
 function CustomerList(){
     const [customers, setCustomers] = useState([]);
@@ -19,7 +20,7 @@ function CustomerList(){
     return(
         <div>
             <h1>Customer</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
                     <tr>
                         <th>First Name</th>
@@ -42,7 +43,7 @@ function CustomerList(){
                 </tbody>
             </table>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <Link to="/customer/create" className="btn btn-secondary btn-lg px-4 gap-3">Add a Customer</Link>
+                <Link to="/customer/create" className="btn btn-success btn-lg px-4 gap-3">Add a Customer</Link>
             </div>
         </div>
     )

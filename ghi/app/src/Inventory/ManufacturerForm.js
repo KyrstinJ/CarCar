@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Inventory.css';
 
 function ManufacturerForm(){
     const [name, setName] = useState('');
@@ -34,7 +35,7 @@ function ManufacturerForm(){
     return(
         <div className="row">
             <div className="offset-3 col-6">
-                <div className="shadow p-4 mt-4">
+                <div className="shadow p-4 mt-4 form-1">
                     <h1>Create a manufacturer</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="form-floating mb-3">

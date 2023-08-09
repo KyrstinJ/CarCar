@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Sale.css';
 
 function SalespersonHistory(){
     const [salespeople, setSalespeople] = useState([]);
@@ -38,7 +39,7 @@ function SalespersonHistory(){
     return(
         <div>
             <h1>Salesperson History</h1>
-            <select onChange={hangleSalespersonChange} value={salesperson} required name="salesperson" id="salesperson" style={{width: "100%"}}>
+            <select onChange={hangleSalespersonChange} value={salesperson} required name="salesperson" id="salesperson" style={{width: "100%"}} className='form-1'>
                 <option value="">Choose a salesperson</option>
                 {salespeople.map(salesperson => {
                     return(
@@ -48,7 +49,7 @@ function SalespersonHistory(){
                     )
                 })}
             </select>
-            <table className="table table-stripped">
+            <table className="table table-striped form-1">
                 <thead>
                     <tr>
                         <th>Salesperson</th>

@@ -20,7 +20,7 @@ function TechnicianList() {
     return (
         <div>
             <h1>Technicians</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
                 <tr>
                     <th>Employee Id</th>
@@ -41,7 +41,7 @@ function TechnicianList() {
                 </tbody>
             </table>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a className="btn btn-secondary btn-lg px-4 gap-3" href='http://localhost:3000/technicians/new'>Create a New Technician</a>
+                <a className="btn btn-success btn-lg px-4 gap-3" href='http://localhost:3000/technicians/new'>Create a New Technician</a>
             </div>
         </div>
     );

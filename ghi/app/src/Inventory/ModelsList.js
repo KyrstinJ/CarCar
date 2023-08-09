@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
+import './Inventory.css';
 
 function ModelsList(){
     const [models, setModels] = useState([]);
@@ -19,7 +20,7 @@ function ModelsList(){
     return(
         <div>
             <h1>Models</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -40,7 +41,7 @@ function ModelsList(){
                 </tbody>
             </table>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <Link to="/models/new" className="btn btn-secondary btn-lg px-4 gap-3">Add a Model</Link>
+                <Link to="/models/new" className="btn btn-success btn-lg px-4 gap-3">Add a Model</Link>
             </div>
         </div>
     )

@@ -43,7 +43,7 @@ function AppointmentList() {
     return (
         <div>
             <h1>Service Appointments</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
                 <tr>
                     <th>VIN</th>
@@ -52,6 +52,8 @@ function AppointmentList() {
                     <th>Date and Time</th>
                     <th>Technician</th>
                     <th>Reason</th>
+                    <th>Cancel</th>
+                    <th>Completed</th>
                 </tr>
                 </thead>
                 <tbody>

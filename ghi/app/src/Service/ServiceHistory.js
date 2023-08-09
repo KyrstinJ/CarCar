@@ -43,13 +43,13 @@ return (
         <div className="form-floating mb-3">
         <input value={searchVin} onChange={handleSearchVinChange} placeholder="Search_vin" required
             type="search" name="search_vin" id="search_vin"
-            className="form-control" />
+            className="form-control" classNameform-1/>
             <label htmlFor="search_vin">Search by VIN...</label>
         </div>
         <button type="submit" className="btn btn-success">Search</button>
         </form>
     </div>
-    <table className="table table-striped">
+    <table className="table table-striped form-1">
         <thead>
         <tr>
             <th>VIN</th>

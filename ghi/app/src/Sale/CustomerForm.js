@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Sale.css';
 
 function CustomerForm(){
     const [first_name, setFirstName] = useState('');
@@ -58,8 +59,8 @@ function CustomerForm(){
     return(
         <div className="row">
             <div className="offset-3 col-6">
-                <div className="shadow p-4 mt-4">
-                    <h1>Create a customer</h1>
+            <div className="shadow p-4 mt-4 form-1">
+                    <h1>Add a Customer</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="form-floating mb-3">
                             <input onChange={handleFirstNameChange} value={first_name} placeholder="First Name" required type="text" name="first_name" id="first_name" className="form-control" />

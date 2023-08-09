@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import './Inventory.css';
 
 function AutomobileForm() {
     const [models, setModels] = useState([]);
@@ -74,7 +74,7 @@ function AutomobileForm() {
     return(
         <div className="row">
             <div className="offset-3 col-6">
-            <div className="shadow p-4 mt-4">
+            <div className="shadow p-4 mt-4 form-1">
                 <h1>Add an automobile to inventory</h1>
                 <form onSubmit={handleSubmit} id="create-location-form">
                 <div className="form-floating mb-3">
@@ -107,7 +107,7 @@ function AutomobileForm() {
                         })}
                     </select>
                 </div>
-                <button className="btn btn-primary">Create</button>
+                <button className="btn btn-success">Create</button>
                 </form>
             </div>
             </div>

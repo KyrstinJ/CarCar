@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 import React, {useState, useEffect} from 'react';
+import './Inventory.css';
 
 function ManufacturersList(){
     const [manufacturers, setManufacturers] = useState([]);
@@ -20,7 +21,7 @@ function ManufacturersList(){
     return(
         <div>
             <h1>Manufacturers</h1>
-            <table className="table table-striped">
+            <table className="table table-striped form-1">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -37,7 +38,7 @@ function ManufacturersList(){
                 </tbody>
             </table>
             <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <Link to="/manufacturers/create" className="btn btn-secondary btn-lg px-4 gap-3">Add a Manufacturer</Link>
+                <Link to="/manufacturers/create" className="btn btn-success btn-lg px-4 gap-3">Add a Manufacturer</Link>
             </div>
         </div>
     )
